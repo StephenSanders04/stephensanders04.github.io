@@ -1,13 +1,13 @@
 html {
     font-size: 10px;
     font-family: "Nova Square";
-    background-color: black;
-    color: white;
+    background-color: #14140f;
+    color: #0D698B;
 }
 h1 {
     margin: 0;
     padding: 20px 0;
-    text-shadow: 3px 3px 1px greenyellow;
+    text-shadow: 3px 3px 1px #e6563c;
     font-size: 60px;
     text-align: center;
 }
@@ -21,9 +21,9 @@ li {
 body {
     width: 1000px;
     margin: 0 auto;
-    background-color: #7851A9;
+    background-color: #130533c2;
     padding: 0 20px 20px 20px;
-    border: 5px solid white;
+    border: 5px groove rgba(255, 0, 0, 0.815);
 }
 .image-container {
     display: grid;
@@ -37,7 +37,7 @@ img {
     height: 750px;
     display: block;
     margin-left: 125px;
-    border: 10px solid black;
+    border: 10px groove rgba(255, 60, 0, 0.705);
 }
 .img-credit {
     margin: 0 auto;
@@ -56,8 +56,11 @@ img {
 .list-start {
     font-size: 30px;
     text-indent: 50px;
-    text-decoration: underline greenyellow;
+    text-decoration: underline #e6563c;
 }
 button {
-    color: orange;
+    background-color: #0D698B;
+    color: #e6563c;
+    font-size: 30px;
+    border: hidden;
 }

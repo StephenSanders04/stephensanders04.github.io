@@ -12,8 +12,8 @@ let counter = 0;
 myImage.onclick = () => {
     //when the image is clicked it will run this function
     // () => makes this and anonomys funtion
-    myAscii.style.color = 'white';
-    myImageText.style.color = 'white';
+    myAscii.style.color = '#0D698B';
+    myImageText.style.color = '#0D698B';
     //resets the color of these texts when the function starts
     const mySrc = myImage.getAttribute("src");
     if (counter === 0) {
@@ -32,7 +32,7 @@ myImage.onclick = () => {
         myImage.setAttribute("src", "images/stephen-with-snowman.png");
         myImageText.textContent = "last one! Knock knock! Who could it be?";
     } else if (counter === 7) {
-        myImage.setAttribute("src", "images/oranges.png");
+        myImage.setAttribute("src", "images/orange-compress.png");
         myAscii.style.color = 'orange';
         myImageText.style.color = 'orange';
         myImageText.textContent = "Orange you glad I didn't say bannana?";
@@ -78,9 +78,9 @@ function setUserName() {
         //these two lines of code should ensure that the counter doesn't go past the final string in the array
     }
     if (arrayCounter === 14) {
-        myName = "STUBORN MULE";
-        localStorage.setItem("name", "STUBORN MULE");
-        myHeading.textContent = "Welcome, STUBORN MULE";
+        myName = "STUBBORN MULE";
+        localStorage.setItem("name", "STUBBORN MULE");
+        myHeading.textContent = "Welcome, STUBBORN MULE";
         //if the user goes through all strings in the array without making an input. they will be assigned a name chosen by me
     } else if (!myName) {
         arrayCounter++;
@@ -112,7 +112,7 @@ if (!localStorage.getItem("name")) {
 }
 myButton.onclick = () => {
     //starts the function when the button is clicked
-    if (arrayCounter === 14 || localStorage.getItem("name") === "STUBORN MULE") {
+    if (arrayCounter === 14 || localStorage.getItem("name") === "STUBBORN MULE") {
         //checks to see if the user has ignored the input prompt
         let isSorry = confirm("are you sorry for being stuborn?");
         //confirm brings up an alert box with 'ok' and 'cancel' sellections that return true and false respectively
@@ -121,7 +121,7 @@ myButton.onclick = () => {
             setUserName();
             //if user selects 'ok' it resets the counter (alowing use of the button without confirm) and asks for name
         } else {
-            alert("Then you will stay a STUBORN MULE!")
+            alert("Then you will stay a STUBBORN MULE!")
             //if user selects 'cancel' it brings up alert box with message and prevents name reset
         }
     } else {
